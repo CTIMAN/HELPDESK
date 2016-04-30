@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<meta charset="utf-8">
+				<title> Solicitud</title>
+				<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		</head>
+			<body>
+				<header>
+					<div align="center">
+					
+					<div id="logo">
+						<img src="img\helpdesk.jpg" alt="Logo de la mesa de ayuda">	
+					</div>
+				</header>
+		<nav>	
+			<ul class="menu"  align="center">
+			
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="registro.html">Registrar soporte</a></li>
+				<li><a href="est_registro.html">Consultar Estado</a></li>
+				<li><a href="administrador.html">Administrador</a></li>
+			</ul>
+		</nav>
+		
+			<form id="contact_form"  action="#" method="POST" enctype="multipart/form-data">
+			<div align="center">
+			<h1>Historial de Solicitud</h1>
+				<table>
+					<colgroup>
+						<col id="nombre" />
+						<col id="apellido" />
+						<col id="fecha" />
+						<col id="estado" />
+						<col id="ver_detalles" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th> Nombre</th>
+							<th> Apellido</th>
+							<th>Departamento</th>
+							<th> Fecha</th>
+							<th> Estado</th>
+							<th> Ver Detalles</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Cristian </td>	
+							<td> Salgado</td>
+							<td> Contabilidad</td>
+							<td> 30-04-2016</td>
+							<td> Cerrado</td>
+							<td>
+								<a href="#">Ver detalles</a>
+							</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<td> Catalina </td>	
+							<td> Cortes</td>
+							<td> Mercadeo</td>
+							<td> 30-04-2016</td>
+							<td> Abierto</td>
+							<td>
+								<a href="#">Ver detalles</a>
+							</td>
+						</tr>
+							
+					</tbody>
+					<tbody>
+						<tr>
+							<td> Lina </td>	
+							<td> Gonzalez</td>
+							<td> Facturacion</td>
+							<td> 30-04-2016</td>
+							<td> Abierto</td>
+							<td>
+								<a href="#">Ver detalles</a>
+							</td>
+						</tr>
+							
+					</tbody>
+				
+			</table>
+		
+		
+		
+	</form>						
+		
+			<div align="center">
+				<h1>Solicitud</h1>
+				<div align="center">
+		
+			<form id="contact_form"  action="#" method="POST" enctype="multipart/form-data">
+				<div class="row">
+					<label for="nombre" >Nombre: <input id="nombre" class="input" name="nombre" type="text" value=""placeholder="Juan" required=true size="30" /></label>
+					<label for="apellido" >Apellido: <input id="apellido" class="input" name="apellido" type="text" value=""placeholder="Apellido" required=true size="30" /></label>	
+				</div>
+			<div class="row">
+				<label for="Fecha" >Fecha: <input id="fecha" class="input" name="fecha type="text" value=""placeholder="Juan" required=true size="30" /></label>
+				<label for="asignado" >Asignado: <input id="asignado" class="input" name="asignado" type="text" value=""placeholder="Asignado" required=true size="30" /></label>
+			</div>
+		
+	
+		
+		
+		
+		<div class="row">
+			<label for="descripcion">Descripcion:</label><br />
+			<textarea id="descripcion class="input" name="descripcion" rows="7" cols="80"></textarea><br />
+		</div>
+		<div class="row">
+			<label for="esatdo">Estado:</label><br />
+			<form class="tam"action="#" method="get" type= "text" value=""size="30">
+				
+				<select class="tam" name="estado">
+					<option value="en transito">En transito</option>
+					<option value="abierto">Abierto</option>
+					<option value="cerrado">Cerrado</option>
+					
+				</select>
+		</div>
+		<button class="submit"type="submit">Enviar</button>
+	</form>						
+
+		
+		<footer>
+			<p>© 2016 - Helpdesk Todos los derechos reservados.</p>
+			
+		</footer>
+		
+
+		</body>
+
+
+		</html>

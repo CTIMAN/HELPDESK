@@ -1,0 +1,25 @@
+{
+  "name": "HELPDESK",
+  "homepage": "https://github.com/CTIMAN/HELPDESK",
+  "authors": [
+    "Cristian Salgado"
+  ],
+  "description": "Portal Mesa de Ayuda",
+  "main": "index.html",
+  "keywords": [
+    "Mesa",
+    "de",
+    "Ayuda"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
