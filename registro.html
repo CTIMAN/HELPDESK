@@ -1,106 +1,172 @@
-		<!DOCTYPE html>
-		<html lang="es">
-			<head>
-				<meta charset="utf-8">
-					<title>Helpdesk</title>
-					<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-		</head>
-			<body>
-				<header>
-					<div align="center">
-					
-					<div id="logo">
-					<img src="img\helpdesk.jpg" alt="Logo de la mesa de ayuda">	
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+	<title>Registrar Soporte</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+	<nav class="navbar navbar-inverse navbar-static-top" data-role="navigation">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm"></button>
+        <span class="sr-only">Desplegar / Ocultar Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index2.html"class="navbar-brand">Bienvenidos HelpDesk</a>
+    </div>
+
+    <!--Inicio Menu -->
+    <div class="collapse navbar-collapse" id="navegacion-fm">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index2.html">Inicio</a></li>
+		<li><a href="registro.html">Registrar Soporte</a></li>
+		<li><a href="est_registro.html">Consultar Estado</a></li>
+        <li><a href="administrador.html">Administrador</a></li>
+        
+      </ul>
+      <form action="" class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="buscar">
+        </div>
+        <button type="submit" class="btn btn-primary">
+			<span class="glyphicon glyphicon-search"></span>
+		</button>
+      </form>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	</header>
+
+	<section class="jumbotron">
+		<div class="container">
+			<h1 class="titulo-bienvenida ">Registrar Soporte</h1>
+			<p>Mesa de ayuda Empresarial</p>
+		</div>
+	</section>		
+			
+	<section class="main container">
+		<div class="row">
+			<section class="post col-md-12">
+				<div class= "miga-de-pan">
+					<ol class= "breadcrumb">
+						<li><a href="index2.html">Inicio</a></li>
+						<li><a href="quienes_somos.html">Quienes Somos</a></li>
+						
+					</ol>
 				</div>
-				</header>
-		<nav>	
-			<ul class="menu"  align="center">
-			
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="registro.html">Registrar soporte</a></li>
-				<li><a href="est_registro.html">Consultar Estado</a></li>
-				<li><a href="administrador.html">Administrador</a></li>
-			</ul>
-		</nav>
-		
-			<div align="center">
-			<h1>Helpdesk</h1>
-			<div align="center">
-		
-			<form id="contact_form"  action="#" method="POST" enctype="multipart/form-data">
-		<div class="row">
-			<label for="sucursal">Sucursal:</label><br />
-			<input id="sucursal" class="input" name="name" type="text" value=""placeholder="Manizales" required=true size="30" /><br />
-		</div>
-		<div class="row">
-			<label for="name">Nombre:</label><br />
-			<input id="name" class="input" name="name" type="text"  value=""placeholder="Juan" required=true size="30" /><br />
-		</div>
-		<div class="row">
-			<label for="apellido">Apellido:</label><br />
-			<input id="apellido" class="input" name="apellido" type="text" value="" placeholder="Apellido" required=true size="30" /><br />
-		</div>
-		<div class="row">
-			<label for="correo">Correo:</label><br />
-			<input id="correo" class="input" name="correo" type="text" value=""type="correo" placeholder="juan@gmail.com" required=true size="30" /><br />
-		</div>
-		<div class="row">
-			<label for="departamento">Departamento:</label><br />
-			<form class="tam"action="#" method="get" type= "text" value=""size="30">
 				
-				<select class="tam" name="departamento">
-					<option value="contabilidad">Contabilidad</option>
-					<option value="mercadeo">Mercadeo</option>
-					<option value="cartera">Cartera</option>
-					<option value="facturacion">Facturacion</option>
-					<option value="logistica">Logistica</option>
-					</select>
-		</div>
-		<div class="row">
-			<label for="asignado">Asignado:</label><br />
-			<form class="tam"action="#" method="get" type= "text" value=""size="30">
+				<div class="container">
+				<br>
+				<form action="" class="">
+				<div class="form-group">
+						<label for="nombre">Sucursal:</label>
+						<input class="form-control" id="nombre" type="text" placeholder="Sucursal:">
+					</div>
 				
-				<select class="tam" name="asignado">
-					<option value="cristian">Cristian Salgado</option>
-					<option value="paola">Paola Cardona</option>
-					<option value="sebastian">Sebastia Orozco</option>
-					<option value="alejandro">Alejandro Zuleta</option>
+					<div class="form-group">
+						<label for="nombre">Nombre:</label>
+						<input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+					</div>
+					
+					<div class="form-group">
+						<label for="nombre">Apellido:</label>
+						<input class="form-control" id="nombre" type="text" placeholder="Apellido:">
+					</div>
+					
+					<div class="form-group">
+						<label for="nombre">Correo Electronico:</label>
+						<input class="form-control" id="nombre" type="text" placeholder="Correo:">
+					</div>
+					
+					
+					<div class="form-group">
+						<label for="option">Departamento:</label> 
+						<select class="form-control" name="" id="option">
+							<option value="">Contabilidad #1</option>
+							<option value="">Facturacion #2</option>
+							<option value="">Cartera #3</option>
+							<option value="">Mercadeo #4</option>
+							<option value="">Gerencia #5</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="option">Categoria:</label> 
+						<select class="form-control" name="" id="option">
+							<option value="">Preventivo y Correctivo</option>
+							<option value="">Problemas Conexion a Internet</option>
+							<option value="">Problemas con Sap</option>
+							<option value="">Problemas de Impresion</option>
+							<option value="">No Enciende la Computadora</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="option">Asignado a:</label> 
+						<select class="form-control" name="" id="option">
+							<option value="">Cristian David Salgado</option>
+							<option value="">Alejandro Zuleta</option>
+							<option value="">Paola Cardona</option>
+							<option value="">Sebastian Orozco</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="mensaje">Descripcion:</label>
+						<textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="archivo">Archivo:</label>
+						<input type="file" id="Archivo">
+						<p class="">Maximo 50MB</p>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary">Enviar Ticket</button>
+						<button class="btn btn-primary">Cancelar</button>
+						<button class="btn btn-primary">Nuevo Ticket</button>
+					</div>
+				</form>
 				
-					</select>
+					
+			</section>
 		</div>
-		
+	</section>
+	<footer>
+	<div class="container">
 		<div class="row">
-			<label for="categoria">Categoria:</label><br />
-			<form class="tam"action="#" method="get" type= "text" value=""size="30">
-				
-				<select class="tam" name="categoria">
-					<option value="contabilidad">Preventivo y Correctivo</option>
-					<option value="mercadeo">Problemas Conexion a Internet</option>
-					<option value="cartera">Problemas con Sap</option>
-					<option value="facturacion">Problemas de Impresion</option>
-					<option value="logistica">No enciende mi computador</option>
-					</select>
-		</div>
-		
-		<div class="row">
-			<label for="descripcion">Descripcion:</label><br />
-			<textarea id="descripcion class="input" name="descripcion" rows="7" cols="80"></textarea><br />
-		</div>
-		
-		<button class="submit"type="submit">Enviar Ticket</button>
-		<button class="submit"type="submit">Cancelar</button>
-		<button class="submit"type="submit">Nuevo Registro</button>
-	</form>						
-
-		
-		<footer>
-			<p>© 2016 - Helpdesk Todos los derechos reservados.</p>
-			
-		</footer>
-		
-
-		</body>
+			<div class="col-xs-6">
+				<p>© 2016 - Helpdesk Todos los derechos reservados.</p>
+			</div>
+	</footer>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 
-		</html>
+
+</body>
+
+
+
+
+</html>

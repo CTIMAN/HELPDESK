@@ -1,109 +1,167 @@
-	<!DOCTYPE html>
-		<html lang="es">
-		<head>
-		<meta charset="utf-8">
-		<title> Historial de Solicitud</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-		</head>
-			<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+	<title>Consultar Soporte</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+	<nav class="navbar navbar-inverse navbar-static-top" data-role="navigation">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm"></button>
+        <span class="sr-only">Desplegar / Ocultar Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index2.html"class="navbar-brand">Bienvenidos HelpDesk</a>
+    </div>
+
+    <!--Inicio Menu -->
+    <div class="collapse navbar-collapse" id="navegacion-fm">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index2.html">Inicio</a></li>
+		<li><a href="registro.html">Registrar Soporte</a></li>
+		<li><a href="est_registro.html">Consultar Estado</a></li>
+        <li><a href="administrador.html">Administrador</a></li>
+        
+      </ul>
+      <form action="" class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="buscar">
+        </div>
+        <button type="submit" class="btn btn-primary">
+			<span class="glyphicon glyphicon-search"></span>
+		</button>
+      </form>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	</header>
+
+	<section class="jumbotron">
+		<div class="container">
+			<h1 class="titulo-bienvenida ">Consultar Estado del Soporte</h1>
+			<p>Mesa de ayuda Empresarial</p>
+		</div>
+	</section>		
 			
-				<header>
-					<div align="center">
-					
-					<div id="logo">
-					<img src="img\helpdesk.jpg" alt="Logo de la mesa de ayuda">	
+	<section class="main container">
+		<div class="row">
+			<section class="post col-md-12">
+				<div class= "miga-de-pan">
+					<ol class= "breadcrumb">
+						<li><a href="index2.html">Inicio</a></li>
+						<li><a href="quienes_somos.html">Quienes Somos</a></li>
+						
+					</ol>
 				</div>
-				</header>
-		<nav>	
-			<ul class="menu"  align="center">
-			
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="registro.html">Registrar soporte</a></li>
-				<li><a href="est_registro.html">Consultar Estado</a></li>
-				<li><a href="administrador.html">Administrador</a></li>
-			</ul>
-		</nav>
-		
-			<div align="center">
-			<h1>Historial de Solicitud</h1>
-			
-		
-			<form id="contact_form"  action="#" method="POST" enctype="multipart/form-data">
-		
-				<table>
-					<colgroup>
-						<col id="nombre" />
-						<col id="apellido" />
-						<col id="fecha" />
-						<col id="estado" />
-						<col id="ver_detalles" />
-					</colgroup>
+				
+				<div class="container">
+				<div class="table-responsive">
+				<table class="table table-hover table-bordered">
 					<thead>
 						<tr>
-							<th> Nombre</th>
-							<th> Apellido</th>
+							<th>#Id</th>
+							<th>Nombre</th>
+							<th>Apellido</th>
 							<th>Departamento</th>
-							<th> Fecha</th>
-							<th> Estado</th>
-							<th> Ver Detalles</th>
+							<th>Fecha Ticket</th>
+							<th>Estado</th>
+							<th>Ver detalles</th>
+							
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td> Cristian </td>	
-							<td> Salgado</td>
-							<td> Contabilidad</td>
-							<td> 30-04-2016</td>
-							<td> Cerrado</td>
-							<td>
-								<a href="#">Ver detalles</a>
-							</td>
-						</tr>
-					</tbody>
-					<tbody>
-						<tr>
-							<td> Catalina </td>	
-							<td> Cortes</td>
-							<td> Mercadeo</td>
-							<td> 30-04-2016</td>
-							<td> Abierto</td>
-							<td>
-								<a href="#">Ver detalles</a>
-							</td>
-						</tr>
+							<td>0001</td>
+							<td>Cristian</td>
+							<td>Salgado</td>
+							<td>Contabilidad</td>
+							<td>14-05-2016</td>
+							<td>Abierto</td>
+							<td>Ver detalles</td>
 							
-					</tbody>
-					<tbody>
-						<tr>
-							<td> Lina </td>	
-							<td> Gonzalez</td>
-							<td> Facturacion</td>
-							<td> 30-04-2016</td>
-							<td> Abierto</td>
-							<td>
-								<a href="#">Ver detalles</a>
-							</td>
 						</tr>
+						<tr>
+							<td>0002</td>
+							<td>James</td>
+							<td>Perez</td>
+							<td>Facturacion</td>
+							<td>12-05-2016</td>
+							<td>Abierto</td>
+							<td>Ver detalles</td>
 							
+					  </tr>
+						<tr>
+							<td>0003</td>
+							<td>Pilar</td>
+							<td>Zuluaga</td>
+							<td>Gerencia</td>
+							<td>11-05-2016</td>
+							<td>Cerrado</td>
+							<td>Ver detalles</td>
+							       
+						</tr>
+						<tr>
+							<td>0004</td>
+							<td>Monica</td>
+							<td>Castellanos</td>
+							<td>Mercadeo</td>
+							<td>10-05-2016</td>
+							<td>Abierto</td>
+							<td>Ver detalles</td>
+							       
+						</tr>
 					</tbody>
+				</table>
 				
-			</table>
-		
-		
-		
-		<button class="submit"type="submit">Cerrar</button>
-		<button class="submit"type="submit">Nuevo Registro</button>
-	</form>						
+				<div class="form-group">
+						<button class="btn btn-primary">Cerrar</button>
+						<button class="btn btn-primary">Nuevo Registro</button>
+					</div>
+				
+				</div>
+				
+				
+					
+			</section>
+		</div>
+	</section>
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<p>© 2016 - Helpdesk Todos los derechos reservados.</p>
+			</div>
+	</footer>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-		
-		<footer>
-			<p>© 2016 - Helpdesk Todos los derechos reservados.</p>
-			
-		</footer>
-		
-
-		</body>
 
 
-		</html>
+</body>
+
+
+
+
+</html>

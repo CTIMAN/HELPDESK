@@ -1,0 +1,18 @@
+/* -- HEADER -- */
+.jumbotron .titulo-bienvenida  {
+	font-size:80px;
+}
+
+.main {
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+.post {
+	
+	border-bottom:1px solid #999;
+}
+
+.post .post-title a {
+	color:#333;
+}
